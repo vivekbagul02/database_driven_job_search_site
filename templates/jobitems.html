@@ -1,0 +1,19 @@
+<div class ='row'>
+  <div class="col-9"  >
+    <div>
+      ROLE:{{ job['position'] }}
+    </div>
+    <div>
+      LOCATION:{{ job['location'] }}
+    </div>
+    {% if job['salary'] %}
+    <div>
+      SALARY:{{ job['salary'] }}
+    </div>
+    {% endif %} 
+  </div>
+  <div  class="col-3" >
+    <button > Apply</button>
+  </div>
+  <hr>
+</div>

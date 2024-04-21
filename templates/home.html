@@ -30,7 +30,7 @@
     <div>
         <h4> about portal</h4>
     </div>
-    <!-- text-align: justify; -->
+
     <div  class="container text-center" text-align="justify" >
         <p  class="fw-semibold" class=justifytext> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at risus viverra adipiscing at in tellus integer. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Ipsum faucibus vitae aliquet nec ullamcorper sit. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Mauris commodo quis imperdiet massa tincidunt nunc. Pulvinar sapien et ligula ullamcorper malesuada. Nec tincidunt praesent semper feugiat nibh. Erat velit scelerisque in dictum. Sit amet tellus cras adipiscing enim eu turpis egestas. In aliquam sem fringilla ut morbi tincidunt augue. A cras semper auctor neque vitae. Volutpat odio facilisis mauris sit amet massa. Nullam ac tortor vitae purus faucibus ornare suspendisse. Sagittis vitae et leo duis ut diam quam nulla. Eget mauris pharetra et ultrices neque ornare aenean. Erat nam at lectus urna duis convallis.
       </p>
@@ -39,20 +39,8 @@
       <h4 class="text-start"> All Job Openings</h4>
       <div class="text-start" class=row >
         {% for job in all_jobs_list %}
-          <div>
-            {{ job['position'] }}
-          </div>
-          <div>
-          {{ job['location'] }}
-          </div>
-          <div>
-          {{ job['salary'] }}
-          </div>
-          <div class="col-md-3 offset-md-3">
-            <button> Apply</button>
-          </div>
-          <hr>
-      {% endfor %}
+         {% include 'jobitems.html' %} 
+        {% endfor %}
       </div> 
     </div>
   </body>

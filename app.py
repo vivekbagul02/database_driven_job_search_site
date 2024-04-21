@@ -20,8 +20,7 @@ all_jobs_list = [{
 }, {
     "job_id": 104,
     'position': 'Data Analyst',
-    "location": "Pune,Maharashtra",
-    "salary": "Rs. 12,00,000"
+    "location": "Pune,Maharashtra"
 }, {
     "job_id": 105,
     'position': 'Python Automation Engineer',
