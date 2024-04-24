@@ -39,3 +39,10 @@ def home_page():
 
 if __name__ == "__main__":
   app.run(host="0.0.0.0", debug=True)
+from replit import db
+from replit import db
+from replit import db
+from replit import db
+from replit import db
+from replit import db
+db["key"] = "value"
