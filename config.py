@@ -33,10 +33,18 @@ class jobs(db.Model):
   job_requirments = db.Column(db.String())
   job_responsibilities = db.Column(db.String())
 
-
 with app.app_context():
   # Fetch all jobs
-  all_jobs = jobs.query.all()
+  db.create_all()
+  all_jobs = jobs.query[1:3]
 
   # Print all jobs
-print(all_jobs)
+for job in all_jobs:
+  print(type(job))
+  print("Job ID:", job.id)
+  print("Job Name:", job.job_name)
+  print("Created Date:", job.created_date)
+  print("Job Requirements:", job.job_requirments)
+  print("Job Responsibilities:", job.job_responsibilities)
+  print()  # Add an empty line for better readability
+
