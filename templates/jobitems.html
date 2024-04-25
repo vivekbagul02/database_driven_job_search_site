@@ -2,19 +2,19 @@
   <div   class ='row'  >
     <div class="col-9" >
       <div>
-        ROLE:{{ job['position'] }}
+        <h5>{{ job.job_name }}</h5>
       </div>
       <div>
-        LOCATION:{{ job['location'] }}
+        Location:{{ job.location }}
       </div>
-      {% if job['salary'] %}
+      {% if job.salary %}
       <div>
-        SALARY:{{ job['salary'] }}
+        Salary:<i>{{ job.salary}} {{ job.currancy }}</i>
       </div>
       {% endif %} 
     </div>
     <div  class="col-3" >
-      <button > Apply</button>
+      <a  href="/job_discription/{{ job.id }}">  Apply </a>
     </div>
   </div>
 
