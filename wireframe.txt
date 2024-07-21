@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 dev 1 working on wireframe.
+=======
+developed by dev 2
+
+>>>>>>> f034b29e26d2aae07f4aa78be1d5710ec9137988
