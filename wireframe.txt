@@ -1,3 +1,11 @@
+<<<<<<< HEAD
 dev 1 working on wireframe.
+<<<<<<< HEAD
 I want to see pull error
 
+=======
+=======
+developed by dev 2
+
+>>>>>>> f034b29e26d2aae07f4aa78be1d5710ec9137988
+>>>>>>> 52bbe626285482306fa7e1eb2b250c5bb9c6cbc3
